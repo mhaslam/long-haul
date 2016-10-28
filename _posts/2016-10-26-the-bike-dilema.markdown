@@ -1,4 +1,11 @@
-The Bike Dilema
+---
+layout: post
+title:  "The Bike Dilemma"
+date:   2016-10-26
+---
+
+
+The Bike Dilemma
 ----------------
 ----------------
 
