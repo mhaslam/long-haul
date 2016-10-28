@@ -4,11 +4,6 @@ title:  "The Bike Dilemma"
 date:   2016-10-26
 ---
 
-
-The Bike Dilemma
-----------------
-----------------
-
 So we read and read and read. Saw videos, checked posts and, at the end we ended up with a list of features we wanted in our bike:
 
 * 26'' Wheels: for strenght, adaptability, and the availabilit of spares.
