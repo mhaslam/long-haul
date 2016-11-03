@@ -1110,13 +1110,14 @@ dd {
     }
     .header .container {
         position: relative;
-        top: 50%;
+        top: 80px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         max-width: 800px;
         margin-left: auto;
-        margin-right: auto
+        margin-right: auto;
+        float:right;
     }
     .header .container:after {
         content: " ";
