@@ -832,7 +832,7 @@ dd {
     color: white;
     padding: 0px;
     height: 3em;
-    background-position-y: -250px;
+    background-position-y: 0px;
 }
 .header .container {
     padding: 0;
