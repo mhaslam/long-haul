@@ -1147,7 +1147,8 @@ dd {
         font-size: 3em;
         line-height: 1;
         letter-spacing: -3px;
-        padding-left: 0
+        padding-left: 0;
+        padding-right: 60px
     }
     .header nav {
         float: left;
