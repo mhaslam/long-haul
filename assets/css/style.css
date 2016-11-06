@@ -1136,7 +1136,8 @@ dd {
         max-width: 800px;
         margin-left: auto;
         margin-right: auto;
-        float:right;
+        float:left;
+        padding-left: 50px;
     }
     .header .container:after {
         content: " ";
