@@ -1063,7 +1063,7 @@ dd {
         position: relative;
         z-index: 1
     }
-    .content:after {
+    /*.content:after {
         z-index: -1;
         background: white;
         content: "";
@@ -1079,7 +1079,7 @@ dd {
         -webkit-transform-origin: bottom left;
         -ms-transform-origin: bottom left;
         transform-origin: bottom left
-    }
+    }*/
     .container {
         max-width: 800px;
         margin-left: auto;
