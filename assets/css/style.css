@@ -1,5 +1,24 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+@import url("https://fast.fonts.net/t/1.css?apiType=css&projectid=c68309f3-3a1e-4196-9fa8-a93865153f6c");
+@font-face{
+font-family:"Museo Sans W01_300";
+src:url("Fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix");
+src:url("Fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix") format("eot"),url("Fonts/1d3191cd-ae8c-45e2-bb04-11e96d8fa974.woff2") format("woff2"),url("Fonts/b252d464-65cb-4950-88f7-ac0a1bf79b75.woff") format("woff"),url("Fonts/b3d18117-6517-4d3f-afc1-774086ff5fc1.ttf") format("truetype"),url("Fonts/b9bed509-0816-43d8-b14b-7525a21f4bde.svg#b9bed509-0816-43d8-b14b-7525a21f4bde") format("svg");
+}
+@font-face{
+font-family:"Museo Sans W01_700";
+src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix");
+src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot"),url("Fonts/e2d37f34-6bca-473c-b64d-93811f4dc046.woff2") format("woff2"),url("Fonts/eadbb595-a394-48fc-834f-8bf5da15cddf.woff") format("woff"),url("Fonts/9bcba093-b507-4b9b-9c83-303003d3815c.ttf") format("truetype"),url("Fonts/9a2af429-2624-4bd1-a676-8f0eed3e7e31.svg#9a2af429-2624-4bd1-a676-8f0eed3e7e31") format("svg");
+}
+@font-face{
+font-family:"Museo Sans W01_900";
+src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix");
+src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix") format("eot"),url("Fonts/009ca58d-46af-4651-a359-f0ae2301085b.woff2") format("woff2"),url("Fonts/3619b5f4-8df9-44f5-8c53-b7c236e9c74e.woff") format("woff"),url("Fonts/9b2d949a-4e1c-435c-8412-f377c80583ae.ttf") format("truetype"),url("Fonts/7a319e11-05eb-49ce-bdb7-f692766e6477.svg#7a319e11-05eb-49ce-bdb7-f692766e6477") format("svg");
+}
+
+*{
+   font-family: "Museo Sans W01_300", "Segoe UI", Helvetica, roboto, sans-serif;
+}
+
 html {
     font-size: 100%;
     line-height: 1.5em
