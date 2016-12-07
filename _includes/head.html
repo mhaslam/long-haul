@@ -18,6 +18,76 @@
 
     <!-- Modernizr -->
     <script src="{{ "/assets/js/modernizr.custom.15390.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-    <script src= "/assets/js/CONGLOMERATE.js" type="text/javascript"></script>
+    <script  type="text/javascript">
+         function Resource(){
+            this.url;
+            this.object = {};
+            this.id;
+            this.xml;
+            this.categories = [];
+            this.entries = [];
+            this.links = [];
+            this.rights;
+            this.selfUrl;
+            this.contentType;
+            this.pagination = {};
+            this.hasNext = false;
+            this.hasPrevious = false;
+            this.filters = [];
+            this.defaultFilters = [];
+            this.version;
+            this.orderBy=[];
+            this.mode;
+            this.parameters = [];
+        };
+        Resource.http = function(method, url, options){
+            //var http = window.XMLHttpRequest?new window.XMLHttpRequest({mozSystem: true}):new window.ActiveXObject( "Microsoft.XMLHTTP" );
+            var http = new XMLHttpRequest();
+            if(options.isCORS)http.withCredentials = true;
+            if (http){
+                var data = options?JSON.stringify(options.data):null;
+                http.open(method, url, true);
+                if (options && !Resource.isEmptyObject(options.headers)){
+                    for (var key in options.headers){
+                        if (typeof key !== 'undefined' && options.headers.hasOwnProperty(key)){
+                            var value = options.headers[key];
+                            http.setRequestHeader(key, value);
+                        }
+                    }
+                }
+                if (options) http.onreadystatechange = function() {
+                  if (http.readyState == 4){
+                    var response =http.responseText;
+                    if(options.headers.Accept=="application/json")response=JSON.parse(http.responseText);
+                    if (http.status >= 200 && http.status < 300){
+                            var ret = response.feed||response;
+                            options.onSuccess(ret);
+                    }else{
+
+                        if (!options.onFailure) {
+                            broadThis.errorManager({"eOptions":response});
+                        } else {
+                            options.onFailure(response);
+                        };
+                    }
+                  }
+                }
+                http.send(data);
+            }else{
+                if (!options.onFailure) {
+                        broadThis.errorManager({"eOptions":'Unable to create HttpRequest Object'});
+                } else {
+                        options.onFailure('Unable to create HttpRequest Object');
+                };
+            } 
+        }
+        Resource.isEmptyObject = function( obj ) {
+            var name;
+            for ( name in obj ) {
+                return false;
+            }
+            return true;
+        }
+    </script>
     {% if site.google_analytics %} {% include google_analytics.html %} {% endif %}
 </head>
